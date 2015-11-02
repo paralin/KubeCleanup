@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Waiting ~30s for pods to be initially scheduled..."
+sleep 30s
 echo "Starting cleanup loop..."
 while true; do
   echo "$(date +%s) Cleaning up exited containers..."
